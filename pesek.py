@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import discord
+from sys import argv
 
 client = discord.Client()
 
@@ -16,4 +17,4 @@ async def on_message(message):
 	if message.content.startswith('chodi pesek okolo...'):
 		await message.channel.send('nedivej se na necho...')
 
-client.run('Njk1MTg4OTkyNzM1NDQ1MDUy.XoWmJA.4FvcbJvPU1GHBnwDDoCVvH63RYo')
+client.run(argv[1])
